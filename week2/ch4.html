@@ -67,15 +67,19 @@
       <button>Apply Now</button>
     </section>
     <script>
-      let country = prompt("Which country are you from?");
-      country = country.toLocaleLowerCase();
-      country = country.trim();
-      country = country.replace("brasil", "brazil");
-      if (country === "portugal" || country === "brazil") {
-        alert("You speak Portugies!");
-      } else {
-        alert("You don't speak Portugies!");
+      function canSpeakPortuguese() {
+        let country = prompt("Which country are you from?");
+        country = country.toLocaleLowerCase();
+        country = country.trim();
+        country = country.replace("brasil", "brazil");
+        if (country === "portugal" || country === "brazil") {
+          alert("You speak Portugies!");
+        } else {
+          alert("Go learn Portuguese!");
+        }
       }
+
+      canSpeakPortuguese();
     </script>
   </body>
 </html>
