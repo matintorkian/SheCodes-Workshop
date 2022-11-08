@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>the Big Bang</title>
+    <style>
+      body {
+        background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+      }
+      h1 {
+        text-align: center;
+        color: #c3195d;
+
+        font-family: "Trebuchet MS", sans-serif;
+      }
+      h2 {
+        text-align: center;
+        font-family: "Trebuchet MS", sans-serif;
+        border: solid #000;
+        border-radius: 10px;
+        padding: 30px;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        /* border: solid #e2d1c3; */
+        border-radius: 5%;
+        max-width: 100%;
+        padding: 20px;
+      }
+
+      figcaption {
+        text-align: center;
+        margin: 20px;
+        font-family: "Trebuchet MS", sans-serif;
+        font-weight: 800;
+      }
+      p {
+        text-indent: 40px;
+        display: block;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        margin-left: 2em;
+        margin-right: 2em;
+        text-align: justify;
+        text-justify: inter-word;
+        font-family: "Trebuchet MS", sans-serif;
+        line-height: 1.5;
+      }
+      a {
+        display: block;
+        margin: 0 auto;
+        text-align: left;
+        margin-left: 2em;
+        margin-bottom: 2em;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+        margin-top: 2em;
+        text-align: center;
+        padding: 20px;
+        font-family: "Trebuchet MS", sans-serif;
+        font-weight: bold;
+        font-size: medium;
+        box-color: rgb(60, 60, 156);
+        background-color: #cca8e9;
+        border-radius: 5px;
+        box-shadow: 6px 6px 0.5px 0.5px rgba(0, 0, 255, 0.2);
+      }
+      button:hover {
+        background: white;
+        color: #1a64d6;
+        border: 1px solid #1a64d6;
+        cursor: pointer;
+      }
+      .cite {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 30px;
+        font-style: italic;
+        font-size: larger;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>The Big Bang</h1>
+    <h2>
+      Curious about Big Bang and the early universe? Let's find out more about
+      it.
+    </h2>
+    <figure>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/052/186/original/The-Big-Bang-Theory-of-Disruption.jpg?1667838771"
+        alt="Trulli"
+      />
+      <figcaption>The moment of Big Bang, when every thing started</figcaption>
+    </figure>
+    <p>
+      The Big Bang event is a physical theory that describes how the universe
+      expanded form an initial state of hight density and temperature. Various
+      cosmological models of the Big Bang explain the evolution of the
+      observable universe from the earliest known periods through its subsequent
+      large-scale form. These models offer a comprehensive explanation for a
+      broad range of observed phenomena, including the abundance of light
+      elements, the cosmic microwave background (CMB) radiation, and large-scale
+      structure. To find out more, checkout wikipedia in the link below:
+    </p>
+    <a href="https://en.wikipedia.org/wiki/Big_Bang"
+      >https://en.wikipedia.org</a
+    >
+    <figure>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/052/207/original/Big-Bang-Diagram-scaled.jpg?1667841802"
+        width="700px"
+      />
+      <figcaption>Expansion of the universe</figcaption>
+    </figure>
+    <button>new articels</button>
+    <p class="cite">This page is built by Matin Torkian</p>
+    <script>
+      function getEmailAddress() {
+        let name = prompt("What is your name?");
+        let email = prompt("Please enter a valid email address!");
+        alert(
+          `Thanks for getting in touch ${name}, you will recieve new articles on a monthly basis.`
+        );
+      }
+      let subscirber = document.querySelector("button");
+      subscirber.addEventListener("click", getEmailAddress);
+    </script>
+  </body>
+</html>
